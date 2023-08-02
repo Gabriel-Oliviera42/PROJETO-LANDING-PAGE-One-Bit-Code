@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #ED4D1B;
+    --cor-secundaria: #FF9A3C;
+    --cor-preta: #000;
+    --cor-branca: #FFF;
+}
+
+body {
+    background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
+    padding: 0 1em;
+}
+
+header, .hero-section, .courses-section, footer {
+    border-color: var(--cor-preta);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    padding: 1.25rem;
+}
+
+header img {
+    display: block;
+    margin: 1rem auto;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav a {
+    color: var(--cor-preta);
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    text-decoration: none;
+} 
+
+header nav a:nth-child(2n-1) {
+    text-align: right;
+}
+
+.button {
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-preta);
+    box-shadow: 4px 4px 0 var(--cor-preta);
+    color: var(--cor-preta);
+    display: block;
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero-section {
+    padding-right: 0;
+    padding-bottom: 16em;
+}
+
+.hero-section img {
+    display: block;
+    margin: 1.25rem 0 0 auto;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 105%;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.hero-section .button {
+    position: relative;
+}
+
+.hero-section .button::after {
+    content: '';
+    background: url(imagem/arrow-curve.svg);
+    position: absolute;
+    top: 5rem;
+    right: -4rem;
+    height: 48px;
+    width: 132px;
+}
+
+.decoration {
+    display: block;
+    position: relative;
+}
+
+.decoration::after {
+    content: '';
+    background: url(imagem/three-dashes.svg);
+    position: absolute;
+    top: -0.85rem;
+    height: 36px;
+    width: 40px;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-primary {
+    color: var(--cor-primaria);
+}
